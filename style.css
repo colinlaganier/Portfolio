@@ -13,45 +13,61 @@
   body {
     background: #F0F0F0;
     display: inline-flex;
+    width: 100%;
   }
 
 .stripes{
     display: flex;
     width: fit-content;
+    position: fixed;
+    height: 0%;
+    margin-left: calc((100vw - 950px)/4 - 30px);
 }
 
 .stripe-red{
     display: block;
-    width: 18px;
+    width: 12px;
     height: 100%;
     background-color: var(--red);
-    margin-left: 7px;
-    margin-right: 7px;
+    margin-left: 4px;
+    margin-right: 4px;
 }
 
 .stripe-teal{
     display: block;
-    width: 18px;
+    width: 12px;
     height: 100%;
     background-color: var(--teal);
-    margin-left: 7px;
-    margin-right: 7px;
+    margin-left: 4px;
+    margin-right: 4px;
 }
 
 .stripe-grey{
     display: block;
-    width: 18px;
+    width: 12px;
     height: 100%;
     background-color: var(--grey);
-    margin-left: 7px;
-    margin-right: 7px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.content{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header{
+    height: 100vh;
 }
 
 .header-name{
     font-family: var(--poppins);
     font-weight: 700;
-    font-size: 125px;
+    font-size: 100px;
     color: black;
+    padding-top: 15vh;
+    padding-bottom: 6.5vh;
 }
 
 .header-sub-container{
@@ -63,6 +79,7 @@
     height: 205px;
     width: 205px;
     border-radius: 100px;
+    margin-left: 4px;
 }
 
 .header-description{
@@ -70,7 +87,7 @@
     margin-left: 115px;
     font-family: var(--raleway);
     font-weight: 500;
-    font-size: 25px;
+    font-size: 18px;
     color: black;
 }
 
@@ -79,10 +96,12 @@
     margin-right: auto;
     display: flex;
     justify-content: space-evenly;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
 }
 
 .header-links-button:hover{
-    transform: scale(1.1);
+    transform: scale(1.02);
 }
 
 .header-links-button{
@@ -100,13 +119,14 @@
     align-items: center;
     justify-content: center;
     transition: all .2s ease-in-out;
+    cursor: pointer;
 }
 
 .header-link{
     all:unset;
     font-family: var(--poppins);
     font-weight: 700;
-    font-size: 25px;
+    font-size: 18px;
     color: black;
 }
 
@@ -114,7 +134,7 @@
     all: unset;
     font-family: var(--poppins);
     font-weight: 700;
-    font-size: 25px;
+    font-size: 18px;
     color: black;
 }
 
@@ -127,7 +147,7 @@
 .header-projects-text{
     font-family: var(--poppins);
     font-weight: 700;
-    font-size: 25px;
+    font-size: 18px;
     color: black;
     margin-left: auto;
     margin-right: auto;
@@ -141,8 +161,7 @@
 }
 
 .project-card-container{
-    width: 1440px;
-    height: 275px;
+    width: 100%;
     background-color: white;
     box-shadow:
     0 2.8px 2.2px rgba(0, 0, 0, 0.034),
@@ -151,34 +170,56 @@
     0 22.3px 17.9px rgba(0, 0, 0, 0.072),
     0 41.8px 33.4px rgba(0, 0, 0, 0.086),
     0 100px 80px rgba(0, 0, 0, 0.12);
+    margin-bottom: 40px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.project-card-container:hover{
+    transform: scale(1.005);
+}
+
+.project-card-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .project-card-img{
-    height: 275px;
-    margin-bottom: 25px;
+    height: 200px;
+    float: left;
+    position: relative;
 }
 
 .project-card-text{
-
+    margin-left: 35px;
+    margin-right: 20px;
+    position: relative;
 }
 
 .project-card-title{
     font-family: var(--poppins);
     font-weight: 700;
-    font-size: 25px;
+    font-size: 18px;
     color: black;
 }
 
 .project-card-subjects{
     font-family: var(--raleway);
     font-weight: 700;
-    font-size: 25px;
+    font-size: 18px;
     color: black;
 }
 
 .project-card-detail{
     font-family: var(--raleway);
     font-weight: 400;
-    font-size: 25px;
+    font-size: 18px;
     color: black;
+}
+
+.spacer{
+    display: block;
+    position: relative;
+    height: 100px;
 }
