@@ -1,6 +1,6 @@
 $(document).ready(function() {
-        $(".stripes-horizontal").animate({
-            width:'100%'
+        $(".stripes-title").animate({
+            height:'80px'
         },
         'slow');
 });

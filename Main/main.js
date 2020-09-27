@@ -8,7 +8,7 @@ $(document).ready(function() {
 
     $("#projects-button").click(function() {
         $('html,body').animate({
-            scrollTop: $("#test").offset().top
+            scrollTop: $("#placeholder").offset().top
           },
           'slow');
       });

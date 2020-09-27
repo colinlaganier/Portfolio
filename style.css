@@ -56,6 +56,9 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  max-width: 1000px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .header {
@@ -109,10 +112,11 @@ body {
   width: 180px;
   height: 50px;
   background-color: white;
-  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  /* box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
     0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
     0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-    0 100px 80px rgba(0, 0, 0, 0.12);
+    0 100px 80px rgba(0, 0, 0, 0.12); */
+  box-shadow: 13px 13px 51px #999999, 13px 13px 51px #ffffff !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -161,10 +165,11 @@ body {
 .project-card-container {
   width: 100%;
   background-color: white;
-  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  box-shadow: 13px 13px 51px #999999, 13px 13px 51px #ffffff !important;
+  /* box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
     0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
     0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-    0 100px 80px rgba(0, 0, 0, 0.12);
+    0 100px 80px rgba(0, 0, 0, 0.12); */
   margin-bottom: 40px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
@@ -202,14 +207,14 @@ body {
 .project-card-subjects {
   font-family: var(--raleway);
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   color: black;
 }
 
 .project-card-detail {
   font-family: var(--raleway);
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   color: black;
 }
 
@@ -230,6 +235,8 @@ h1{
     font-weight: 700;
     font-size: 45px;
     color: black;
+    height: 80px;
+    margin-left: 10px;
 }
 
 h2{
@@ -242,9 +249,59 @@ h2{
 p{
     font-family: var(--raleway);
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     color: black;
+    text-align: justify;
 }
+
+.project-heading{
+    display: flex;
+}
+
+.stripes-title {
+    display: flex;
+    width: fit-content;
+    position: relative;
+    height: 0px;
+    margin-top: 8px
+}
+  
+  .stripe-horizontal-red {
+    display: block;
+    height: 12px;
+    width: 100%;
+    background-color: var(--red);
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+  
+  .stripe-horizontal-teal {
+    display: block;
+    height: 12px;
+    width: 100%;
+    background-color: var(--teal);
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+  
+  .stripe-horizontal-grey {
+    display: block;
+    height: 12px;
+    width: 100%;
+    background-color: var(--grey);
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+
+  .project-main-img{
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    object-fit: cover;
+    object-position: 0% 17%;
+  }
+  
 
 /* end of CYCLONE */
 
