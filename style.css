@@ -16,6 +16,7 @@ body {
   width: 100%;
 }
 
+/* start of MAIN */
 .stripes {
   display: flex;
   width: fit-content;
@@ -66,8 +67,6 @@ body {
   font-weight: 700;
   font-size: 100px;
   color: black;
-  /* padding-top: 15vh;
-    padding-bottom: 6.5vh; */
   padding-top: calc((100vh - 470px) / 3.75);
   padding-bottom: calc((100vh - 470px) / 8.5);
 }
@@ -219,3 +218,34 @@ body {
   position: relative;
   height: 100px;
 }
+
+/* end of MAIN */
+
+/* start of PROJECTS */
+
+/* start of CYCLONE */
+
+h1{
+    font-family: var(--poppins);
+    font-weight: 700;
+    font-size: 45px;
+    color: black;
+}
+
+h2{
+    font-family: var(--poppins);
+    font-weight: 700;
+    font-size: 18px;
+    color: black;
+}
+
+p{
+    font-family: var(--raleway);
+    font-weight: 400;
+    font-size: 18px;
+    color: black;
+}
+
+/* end of CYCLONE */
+
+/* end of PROJECTS */
