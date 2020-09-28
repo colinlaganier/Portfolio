@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">    
+
+    <title>Colin Laganier</title>
+  </head>
+  <body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./Js/main.js"></script>
+
+    <div class="stripes">
+        <div class="stripe-red"></div>
+        <div class="stripe-teal"></div>
+        <div class="stripe-grey"></div>
+    </div>
+    <div class="content">
+        <div class="header">
+            <div class="header-name">COLIN LAGANIER</div>
+            <div class="header-sub-container">
+                <div class="header-photo">
+                    <img class="header-photo-img" loading="eager" src="./Images/picture_face.JPG" alt="profile-photo">
+                </div>
+                <div class="header-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed imperdiet odio. Praesent finibus varius vehicula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed efficitur, lacus sit amet dictum venenatis, sem massa tristique ex, et blandit eros justo vel velit. Maecenas sed risus elit. </div>
+            </div>
+            <div class="header-links-container">
+                <div class="header-links-button" onclick="window.location='../CV_Colin_Laganier.pdf'">
+                    <a class="header-link" href="./CV_Colin_Laganier.pdf">CV</a>
+                </div>
+                <div class="header-links-button" onclick="window.location='https://www.linkedin.com/in/colinlaganier/'">
+                    <a class="header-link" href="https://www.linkedin.com/in/colinlaganier/">LINKEDIN</a>
+                </div>
+                <div class="header-links-button" onclick="window.location='mailto:colin.laganier@gmail.com'">
+                    <a class="header-link" href="mailto:colin.laganier@gmail.com">CONTACT</a>
+                </div>
+            </div>
+            <div class="header-projects-button" id="projects-button">
+                <div class="header-projects-text">PROJECTS</div>
+                <img class="header-projects-img" loading="eager" src="./Images/arrow_down.svg" alt="scroll-down-button">
+            </div>
+        </div>
+        <div id="placeholder" style="height: 10px;"></div>
+        <div class="projects" id="projects-top">
+            <div class="project-card-container" onclick="window.location='cyclone.html'">
+                <div class="project-card-content">
+                    <img class="project-card-img" src="./Images/curler_cover.png">
+                    <div class="project-card-text">
+                        <div class="project-card-title">CYCLONE CURLER</div>
+                        <div class="project-card-subjects">Design | DFMA | Electronics</div></br>
+                        <div class="project-card-detail">Battery powered curling iron for visually impaired users inspired by a cyclone separator. Designed for manufacturing using Solidworks, using FEA, flow simulations and thermal calculations to ensure feasibility.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card-container" onclick="window.location='colorizmo.html'">
+                <div class="project-card-content">
+                    <img class="project-card-img" src="./Images/colorizmo_cover.png">
+                    <div class="project-card-text">
+                        <div class="project-card-title">ROBO COLORIZMO</div>
+                        <div class="project-card-subjects">Design | Manufacturing | Electronics</div></br>
+                        <div class="project-card-detail">3-axis robotic gripping arm using OpenCV to find and sort colored cubes. Used a Raspberry Pi to run the computer vision program (Python) and an Arduino Uno for the robotic commands (C++).</div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card-container" onclick="window.location='./.html'">
+                <div class="project-card-content">
+                    <img class="project-card-img" src="./Images/miniwheg_cover.jpg">
+                    <div class="project-card-text">
+                        <div class="project-card-title">MINI-WHEG</div>
+                        <div class="project-card-subjects">Mechanics | DFMA | CAD</div></br>
+                        <div class="project-card-detail">Small and lightweight all terrain insect inspired robot, able to travel at over 1m/s and climb over obstacles taller than it is. 168 component assembly created using Solidworks and tested with Solidworks Simulation.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card-container" onclick="window.location='tetromino.html'">
+                <div class="project-card-content">
+                    <img class="project-card-img" src="./Images/tetromino_cover.png">
+                    <div class="project-card-text">
+                        <div class="project-card-title">TETROMINO CHALLENGE</div>
+                        <div class="project-card-subjects">Python | Algorithm</div></br>
+                        <div class="project-card-detail">3-axis robotic gripping arm using OpenCV to find and sort colored cubes. Used a Raspberry Pi to run the computer vision program (Python) and an Arduino Uno for the robotic commands (C++).</div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card-container" onclick="window.location='./.html'">
+                <div class="project-card-content">
+                    <img class="project-card-img" src="./Images/passman_cover.png">
+                    <div class="project-card-text">
+                        <div class="project-card-title">SELF-BALANCING SEGWAY</div>
+                        <div class="project-card-subjects">Electronics | Python</div></br>
+                        <div class="project-card-detail">3-axis robotic gripping arm using OpenCV to find and sort colored cubes. Used a Raspberry Pi to run the computer vision program (Python) and an Arduino Uno for the robotic commands (C++).</div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card-container" onclick="window.location='./.html'">
+                <div class="project-card-content">
+                    <img class="project-card-img" src="./Images/racing_cover.jpg">
+                    <div class="project-card-text">
+                        <div class="project-card-title">IMPERIAL RACING</div>
+                        <div class="project-card-subjects">Manufacturing | CAD</div></br>
+                        <div class="project-card-detail">3-axis robotic gripping arm using OpenCV to find and sort colored cubes. Used a Raspberry Pi to run the computer vision program (Python) and an Arduino Uno for the robotic commands (C++).</div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card-container" onclick="window.location='./.html'">
+                <div class="project-card-content">
+                    <img class="project-card-img" src="./Images/passman_cover.png">
+                    <div class="project-card-text">
+                        <div class="project-card-title">PASSMAN</div>
+                        <div class="project-card-subjects">C++ | MySQL</div></br>
+                        <div class="project-card-detail">Collaborative password manager program made with C++ and stored in a MySQL database. Applied my knowledge of C++ and learned about encryption and cyber security.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="spacer"></div>
+        </div>
+    </div>
+    
+   <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-analytics.js"></script>
+
+    <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+        apiKey: "AIzaSyDtsIM4qEUlqedUs7pjzMCqufQKbsULzA4",
+        authDomain: "portfolio-de7cd.firebaseapp.com",
+        databaseURL: "https://portfolio-de7cd.firebaseio.com",
+        projectId: "portfolio-de7cd",
+        storageBucket: "portfolio-de7cd.appspot.com",
+        messagingSenderId: "909917738685",
+        appId: "1:909917738685:web:9820c3fd6f9e81a16149d4",
+        measurementId: "G-KMGY7M2KQX"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    </script>
+  </body>
+</html>
