@@ -301,8 +301,39 @@ p{
     object-fit: cover;
     object-position: 0% 17%;
   }
-  
 
+  .project-video-container{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+  }
+
+  .project-video-text{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+  }
+
+  .project-paragraph-split{
+      display: flex;
+  }
+
+  .project-text-split{
+      width: 50%;
+  }
+
+  .project-img-split{
+      margin-left: auto;
+      margin-right: 0px;
+  }
+
+  #curler-section-view{
+      width: 35%;
+      margin-top: -37px;
+  }
+  
 /* end of CYCLONE */
 
 /* end of PROJECTS */
