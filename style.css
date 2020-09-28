@@ -254,6 +254,24 @@ p{
     text-align: justify;
 }
 
+a{
+    all: unset;
+    font-family: var(--raleway);
+    font-weight: 700;
+    font-size: 16px;
+    color: black;
+    cursor: pointer;
+}
+a:hover{
+    all: unset;
+    font-family: var(--raleway);
+    font-weight: 700;
+    font-size: 16px;
+    color: black;
+    cursor: pointer;
+}
+
+
 .project-heading{
     display: flex;
 }
@@ -266,74 +284,90 @@ p{
     margin-top: 8px
 }
   
-  .stripe-horizontal-red {
-    display: block;
-    height: 12px;
-    width: 100%;
-    background-color: var(--red);
-    margin-top: 4px;
-    margin-bottom: 4px;
-  }
-  
-  .stripe-horizontal-teal {
-    display: block;
-    height: 12px;
-    width: 100%;
-    background-color: var(--teal);
-    margin-top: 4px;
-    margin-bottom: 4px;
-  }
-  
-  .stripe-horizontal-grey {
-    display: block;
-    height: 12px;
-    width: 100%;
-    background-color: var(--grey);
-    margin-top: 4px;
-    margin-bottom: 4px;
-  }
+.stripe-horizontal-red {
+display: block;
+height: 12px;
+width: 100%;
+background-color: var(--red);
+margin-top: 4px;
+margin-bottom: 4px;
+}
 
-  .project-main-img{
-    width: 100%;
-    height: 400px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    object-fit: cover;
-    object-position: 0% 17%;
-  }
+.stripe-horizontal-teal {
+display: block;
+height: 12px;
+width: 100%;
+background-color: var(--teal);
+margin-top: 4px;
+margin-bottom: 4px;
+}
 
-  .project-video-container{
-    display: block;
+.stripe-horizontal-grey {
+display: block;
+height: 12px;
+width: 100%;
+background-color: var(--grey);
+margin-top: 4px;
+margin-bottom: 4px;
+}
+
+.project-main-img{
+width: 100%;
+height: 400px;
+margin-top: 20px;
+margin-bottom: 20px;
+object-fit: cover;
+}
+
+.project-video-container{
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: fit-content;
+}
+
+.project-video-text{
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: fit-content;
+}
+
+.project-paragraph-split{
+    display: flex;
+}
+
+.project-text-split{
+    width: 50%;
+}
+
+.project-img-split{
+    margin-left: auto;
+    margin-right: 0px;
+}
+
+#curler-section-view{
+    width: 35%;
+    margin-top: -37px;
+}
+
+.project-img-mid{
     margin-left: auto;
     margin-right: auto;
-    width: fit-content;
-  }
-
-  .project-video-text{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: fit-content;
-  }
+}
 
-  .project-paragraph-split{
-      display: flex;
-  }
+#curler-main-img{
+    object-position: 0% 17%
+}
 
-  .project-text-split{
-      width: 50%;
-  }
-
-  .project-img-split{
-      margin-left: auto;
-      margin-right: 0px;
-  }
-
-  #curler-section-view{
-      width: 35%;
-      margin-top: -37px;
-  }
-  
 /* end of CYCLONE */
 
+/* start of COLORIZMO */
+
+#colorizmo-main-img{
+    object-position: 0% 45%
+}
+
+/* end of COLORIZMO */
 /* end of PROJECTS */
