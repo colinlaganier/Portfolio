@@ -38,46 +38,53 @@
             <h2>OVERVIEW</h2>
             <p>January - June 2020</p>
             <p>Collaborators: <a class="project-name-link" href="https://www.linkedin.com/in/alexandreberkovic/">Alexandre Berkovic</a>, Brandon Tan, Natasha Cowans </p>
-            <p>The task of this project was to create a handheld battery powered device for an underserved user group. Our team decided to work with visually impaired users, and through interviews and discussion decided to create a hair styling product that would tackle the issues encountered by our users.</p>
-        </div>
+            <p>The task of this project was to create a <b>handheld battery powered device</b> for an underserved user group. Our team decided to work with <b>visually impaired users</b>, and through interviews and discussion decided to create a <b>hair styling product</b> that would tackle the issues encountered by our users.</p>
+            <p>My role in the team was to design the overall product, identify the technical requirements and viable component to use, create half of the model in CAD, create simulations for testing and rendering product photos and videos using Keyshot.</p>
+          </div>
         <div class="project-paragraph">
           <h2>ADAPTING TO THE USER BASE</h2>
           <p>Through research into both the habits of visually impaired users and the user interaction with traditional hair curlers, some <b>key issues</b> and <b>insights</b> became apparent. The main issues of available products are the <b>risk of burns</b> due to the exposed heated rod, the<b> risk of tangling </b>with motorised curlers, <b>lack of feedback</b> before, during and after use, finally the overall <b>expensive</b> nature of products specifically designed for “disabled” users. The major insights obtained through research were the importance of <b>sensory clues</b> for visually impaired users (haptic, audio but also visual as most visually impaired users can still distinguish flashing lights), as well as the<b> potential for new products </b>in the hair styling market due to the overall negative appeal of traditional curling irons.</p> 
         </div>
         <div class="project-paragraph">
           <h2>INNOVATIVE APPROACH</h2>
-          <p></p>
+          <p>To tackle the issue of <b>safety</b> for the users, it was decided that heated rods and mechanical elements should be avoided. An alternative commonly used in the hair styling world is heated air. The Cyclone Curler is inspired by <b>Cyclone Separators</b> and uses the same principal to guide the hair around a shaping rod using a <b>vortex</b> contained in a cavity. Through testing using a 3D printed prototype attached to a hair dryer, this idea was confirmed to be viable. </p>
         </div>
         <div class="project-paragraph">
           <h2>DIGITAL TESTING</h2>
-          <p></p>
+          <p>To successfully create a <b>vortex</b> that would guide the hair downwards in the device, multiple iterations of <b>CAD designs</b> were created. With every iteration a <b>Flow Simulation </b>was done to see the influence of multiple parameters, ranging from the diameter of the inner tube, to the angle of the exit tube. Through these simulations, an optimal design was obtained to reduce the <b>escaping air</b> at the top while ensuring a powerful enough vortex. <b>Heat transfer simulations </b>were done to determine the necessary protections to keep the handle’s surface temperature cool enough for extended use. Finally,<b> fatigue simulations</b> of the components that would be subjected to repeated stress was done as well as a<b> vibration analysis</b>. This final simulation ensured that the casing’s <b>natural frequency</b> did not match the motor’s to avoid resonance. It is interesting to note that its natural frequency did not match any of the natural frequencies of the different <b>joints in the hand-arm system </b>(see <a href=https://www.researchgate.net/publication/283546707_Natural_Frequencies_of_the_Human_Hand-Arm_System_using_Finite_Element_Method_and_Experimental_Modal_Analysis>paper</a>), ensuring that vibrations would not have a detrimental impact on the user experience.</p>
+          <div class="project-triple-split">
+            <img class="project-img-triple-vert" src="Images/curler_flow_simulation.gif" alt="flow-simulation">
+            <img class="project-img-triple-vert" src="Images/curler_vibration.png" alt="flow-simulation">
+            <img class="project-img-triple-hor" src="Images/curler_fatigue.png" alt="flow-simulation">
+          </div>
         </div>
         <div class="project-paragraph">
           <h2>PRODUCT DETAIL</h2>
           <div class="project-paragraph-split" >
-            <p class="project-text-split">10L of air are sucked in from the bottom by a centrifugal pump every second and is guided into the handle by the volute chamber. A brushless DC motor rotates the impeller at a rate de 8,000 RPM to obtain this flow. In the handle is a 422W nichrome-mica heating element encased in an acrylic shell, which heats up the air up to 65°C. The acrylic shell reduces the loss of heat to the handle and ensures safe extended use. The air then goes through an airflow separator which can change the direction of the air depending on the chosen setting. Finally, the air is guided at a 12° downward slant into the main tube, where it creates a vortex guiding the hair. As the product was destined to be both portable and battery powered, energy use was a crucial issue and a balance of battery capacity and weight was obtained using multiple 26650 batteries. This delivers a half hour of battery life, which was determined to be enough for every user interviewed.</p>
+            <p class="project-text-split"><b>10L of air</b> are sucked in from the bottom by a <b>centrifugal pump</b> every second and is guided into the handle by the <b>volute chamber</b>. A brushless DC motor rotates the impeller at a rate de <b>8,000 RPM</b> to obtain this flow. In the handle is a <b>422W nichrome-mica heating element</b> encased in an acrylic shell, which heats up the air up to <b>65°C</b>. The acrylic shell reduces the <b>loss of heat to the handle</b> and ensures safe extended use. The air then goes through an <b>airflow separator</b> which can change the direction of the air depending on the chosen setting. Finally, the air is guided at a 12° downward slant into the main tube, where it creates a <b>vortex guiding the hair</b>. As the product was destined to be both portable and battery powered, energy use was a crucial issue and a balance of battery capacity and weight was obtained using multiple <b>26650 batteries</b>. This delivers a <b>half hour</b> of battery life, which was determined to be enough for every user interviewed.</p>
             <img class="project-img-split" id="curler-section-view" src="Images/curler_section.png" alt="">
           </div>
         </div>
         <div class="project-paragraph">
           <h2>DESIGN FOR MANUFACTURING AND ASSEMBLY</h2>
           <div class="project-paragraph-split" >
-            <img src="Images/curler_casing.png" loading="lazy" alt="" width="35%"><br>
-            <p class="project-text-split" style="margin-right:0px; margin-left:auto">10L of air is sucked in from the bottom by the centrifugal pump every second and is guided into the handle by the volute chamber. In the handle is the 422W nichrome-mica heating element encased in an acrylic shell, which heats up the air up to 65°C. The air then goes through an airflow separator which can change the direction of the air depending on the setting. Finally, the air is guided at a 12° downward slant into the main tube, where it creates a vortex guiding the hair. As the product was destined to be both portable and battery powered, energy use was a crucial issue and a balance of battery capacity and weight was obtained using multiple 26650 batteries. </p>
-        </div>
-          <img class="project-img-mid" loading="lazy" src="Images/curler_exploded_view.png" alt="" width="500px">
+            <img src="Images/curler_casing.png" loading="lazy" alt="" width="35%" style="align-self: center;"><br>
+            <p class="project-text-split" style="margin-right:0px; margin-left:auto;margin-top: 25px;">When the selection of all the internal components was finalized, the design of the casing of the product was created. As the product was destined for mass production, it was essential to design components that could be <b>injection moulded </b>and assembled the most efficiently possible. To ensure a strong and rigid casing, <b>ribs</b> were added. These ribs were also designed to hold in in place both the internal tubing and the assembled heating element.<b> Bosses and gussets </b>were added for the screws that hold the casing halves together. Components designed to be opened by the users used <b>snap-fits or locking mechanisms</b>.<br><br> We designed our PCB to control the different light cues, sounds and heat settings and provide the necessary voltage to the different components of the product. Additionally, the board handled the charging of the li-ion batteries from the charging base. Designing our PCB allowed us to reduce the size of premade boards by adding only the required elements.</p>
+            <!-- <p class="project-text-split" style="margin-right:0px; margin-left:auto;margin-top: 25px;">We designed our PCB to control the different light cues, sounds and heat settings and provide the necessary voltage to the different components of the product. Additionally, the board handled the charging of the li-ion batteries from the charging base. Designing our PCB allowed us to reduce the size of premade boards by adding only the required elements.</p> -->
+          </div>
+          <img class="project-img-mid" loading="lazy" src="Images/curler_exploded_view.png" alt="" width="500px" style="margin-top: 25px;">
         </div>
         <div class="project-paragraph">
           <h2>SENSORY CUES</h2>
-          <p>To ensure ease of use for the user, several elements have been implemented. Firstly, the integration of a vocal assistant relying on the Alexa API and the creation of personalized hooks. This adds an extra layer of security for the user to ensure the product is turned off and can monitor usage. Secondly, to make use of the crucial residual sight of the visually impaired users, an LED ring at the bottom indicates the direction of the air flow, while an LED button helps the user easily find it. Finally, a piezoelectric speaker gives the user timing cues to ensure the hair is not burned due to a prolonged exposure to the heated air.</p>
+          <p>To ensure <b>ease of use</b> for the user, several elements have been implemented. Firstly, the integration of a <b>vocal assistant </b>relying on the Alexa API and the creation of personalized hooks. This adds an extra layer of security for the user to ensure the product is turned off and can monitor usage. Secondly, to make use of the crucial<b> residual sight</b> of the visually impaired users, an LED ring at the bottom indicates the direction of the air flow, while an LED button helps the user easily find it. Finally, a <b>piezoelectric speaker</b> gives the user timing cues to ensure the hair is not burned due to a prolonged exposure to the heated air.</p>
           <div style="display: flex;">
             <img src="Images/curler_led.jpg" loading="lazy" alt="" width="48%" style="margin-right:2%">
             <img src="Images/curler_pcb.jpg" loading="lazy" alt="" width="48%" style="margin-left:2%">
           </div>
         </div>
-        <img src="Images/curler_coil.png" loading="lazy" lt="" width="500px">
-        <img src="Images/curler_impeller.png" loading="lazy" alt="" width="500px">
-        <img src="Images/curler_product_range.jpg" loading="lazy" alt="" width="100%">
+        <!-- <img src="Images/curler_coil.png" loading="lazy" lt="" width="500px">
+        <img src="Images/curler_impeller.png" loading="lazy" alt="" width="500px"> -->
+        <img class="project-final-img" src="Images/curler_product_range.jpg" loading="lazy" alt="">
         <p>A requirement of this project was to identify a brand that could offer this product among their range of products and design in to fit. Our team decided to choose Panasonic due to their connection to the hair care market as well as their technologically innovative product line. This project was not affiliated, associated, authorized, endorsed by, or in any way officially connected with Panasonic. The name Panasonic as well as related names, marks, emblems and images are registered trademarks of their respective owners.</p>
         <div class="project-video-container">
           <iframe width="560" loading="lazy" height="315" src="https://www.youtube.com/embed/5X7HKeKbk8s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

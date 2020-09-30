@@ -61,6 +61,17 @@ body {
   padding-right: 25px;
 }
 
+.warning-background{
+  color: black;
+  opacity: .4;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  width: 100vw;
+  height: 100vh;
+}
+
 .header {
   height: 100vh;
 }
@@ -359,6 +370,10 @@ margin-right: auto;
 width: fit-content;
 }
 
+.project-paragraph{
+  margin-top: 25px;
+}
+
 .project-paragraph-split{
     display: flex;
 }
@@ -370,6 +385,8 @@ width: fit-content;
 .project-img-split{
     margin-left: auto;
     margin-right: 0px;
+    align-self: center;
+
 }
 
 #curler-section-view{
@@ -385,6 +402,27 @@ width: fit-content;
 
 #curler-main-img{
     object-position: 0% 17%
+}
+
+.project-triple-split{
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-img-triple-vert{
+  height: 400px;
+  align-self: center;
+
+}
+.project-img-triple-hor{
+  width: 35%;
+  align-self: center;
+}
+
+.project-final-img{
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 /* end of CYCLONE */

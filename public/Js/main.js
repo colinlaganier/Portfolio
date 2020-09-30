@@ -1,10 +1,8 @@
 $(document).ready(function() {
-    // $(".header-name").click(function(){
         $(".stripes").animate({
             height:'100%'
         },
         'slow');
-    // });
 
     $("#projects-button").click(function() {
         $('html,body').animate({
@@ -12,4 +10,9 @@ $(document).ready(function() {
           },
           'slow');
       });
+
+    // $(".warning-background").click(function() {
+    //     $(".phone-warning").hide()
+    //     console.log("closing popup")
+    // })
 });
