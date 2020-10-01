@@ -1,7 +1,7 @@
 $(document).ready(function() {
     // if ($( window ).width()<600px){
     // }
-    console.log($( window .css( "width" )));
+    // console.log($( window .css( "width" )));
     
     $(".stripes").animate({
         height:'100%'
