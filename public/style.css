@@ -85,6 +85,12 @@ body {
   padding-bottom: calc((100vh - 470px) / 8.5);
 }
 
+.header-title-container{
+  display: flex;
+  margin-top: calc((100vh - 470px) / 8);
+  margin-bottom: calc((100vh - 470px) / 10);
+}
+
 .header-sub-container {
   display: flex;
   align-items: center;
@@ -235,6 +241,109 @@ body {
   height: 100px;
 }
 
+@media only screen and (max-width: 600px) {
+  .content {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90vw;
+    padding:  0px;
+  }
+  .header{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .header-name {
+    font-family: var(--poppins);
+    font-weight: 700;
+    font-size: 10vw;
+    color: black;
+    line-height: 1;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .header-sub-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .header-photo-img {
+    height: 40vw;
+    width: 40vw;
+    border-radius: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .header-description {
+    margin-top: 2vh;
+    font-family: var(--raleway);
+    font-weight: 500;
+    font-size: 13px;
+    color: black;
+    text-align: justify;
+    width: 100%;
+    margin-left: 0px;
+  }
+  .header-links-container {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 0px;
+    padding-bottom: calc((100vh - 470px) / 3.25);
+  }
+  .header-links-button{
+    margin-top: 2vh;
+    height: 45px;
+  }
+  .stripes-title-main{
+    display: flex;
+    width: fit-content;
+    position: relative;
+    margin-top: 4px;
+    margin-right: 10px;
+  }
+  .stripe-red{
+    width: 8px;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+  .stripe-grey{
+    width: 8px;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+  .stripe-teal{
+    width: 8px;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+
+  .project-card-content{
+    flex-direction: column;
+  }
+  .project-card-title{
+    font-size: 16px;
+  }
+  .project-card-subjects{
+    font-size: 13px;
+  }
+  .project-card-detail{
+    font-size: 13px;
+  }
+  .project-card-text{
+    margin: 15px;
+  }
+  .project-card-img{
+    height: auto;
+    width: 100%;
+  }
+}
+
 /* end of MAIN */
 
 /* start of PROJECTS */
@@ -314,60 +423,66 @@ a:hover{
 }
 
 .stripes-title {
-    display: flex;
-    width: fit-content;
-    position: relative;
-    height: 0px;
-    margin-top: 8px
+  display: flex;
+  width: fit-content;
+  position: relative;
+  height: 0px;
+  margin-top: 8px
+}
+
+@media only screen and (min-width: 601px){
+  .stripes-title-main{
+    display: none;
+  }
 }
   
 .stripe-horizontal-red {
-display: block;
-height: 12px;
-width: 100%;
-background-color: var(--red);
-margin-top: 4px;
-margin-bottom: 4px;
+  display: block;
+  height: 12px;
+  width: 100%;
+  background-color: var(--red);
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 
 .stripe-horizontal-teal {
-display: block;
-height: 12px;
-width: 100%;
-background-color: var(--teal);
-margin-top: 4px;
-margin-bottom: 4px;
+  display: block;
+  height: 12px;
+  width: 100%;
+  background-color: var(--teal);
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 
 .stripe-horizontal-grey {
-display: block;
-height: 12px;
-width: 100%;
-background-color: var(--grey);
-margin-top: 4px;
-margin-bottom: 4px;
+  display: block;
+  height: 12px;
+  width: 100%;
+  background-color: var(--grey);
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 
 .project-main-img{
-width: 100%;
-height: 400px;
-margin-top: 20px;
-margin-bottom: 20px;
-object-fit: cover;
+  width: 100%;
+  height: 400px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  object-fit: cover;
 }
 
 .project-video-container{
-display: block;
-margin-left: auto;
-margin-right: auto;
-width: fit-content;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
 }
 
 .project-video-text{
-display: block;
-margin-left: auto;
-margin-right: auto;
-width: fit-content;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
 }
 
 .project-paragraph{
