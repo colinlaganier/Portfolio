@@ -566,6 +566,206 @@ a:hover{
     object-position: 0% 45%
 }
 
+/* .project-hover-container{
+
+}
+
+/* .project-hover-stepper{
+
+} */
+
+/* project-hover-stepper{} */
+
+/* .project-tooltip-img{
+}
+
+.project-overview-img{} */ 
+
+
+.project-hover-stepper {
+  position: absolute;
+  margin-top: 408px;
+  margin-left: 97px;
+  height: 110px;
+  cursor: pointer;
+  width: 121px;
+}
+
+.project-hover-stepper .project-tooltip-stepper {
+  visibility: hidden;
+  background-color: #f0f0f0;
+  color: black;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  top: -50px;
+  left: 140%;
+  width: fit-content;
+  opacity: 0;
+  box-shadow: 11px 11px 50px #999999;
+  transition:opacity 0.6s;
+}
+
+.project-hover-stepper:hover .project-tooltip-stepper {
+  visibility: visible;
+  opacity: 1;
+}
+
+.project-hover-mini {
+  position: absolute;
+  margin-top: 251px;
+  margin-left: 761px;
+  height: 35px;
+  cursor: pointer;
+  width: 41px;
+}
+
+.project-hover-mini .project-tooltip-mini {
+  visibility: hidden;
+  background-color: #f0f0f0;
+  color: black;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  top: -85px;
+  left: 170%;
+  width: fit-content;
+  opacity: 0;
+  box-shadow: 11px 11px 50px #999999;
+  transition:opacity 0.6s;
+}
+
+.project-hover-mini:hover .project-tooltip-mini {
+  visibility: visible;
+  opacity: 1;
+}
+
+.project-hover-camera {
+  position: absolute;
+  margin-top: 442px;
+  margin-left: 286px;
+  height: 57px;
+  cursor: pointer;
+  width: 18px;
+}
+
+.project-hover-camera .project-tooltip-camera {
+  visibility: hidden;
+  background-color: #f0f0f0;
+  color: black;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  top: -75px;
+  left: 190%;
+  width: fit-content;
+  opacity: 0;
+  box-shadow: 11px 11px 50px #999999;
+  transition:opacity 0.6s;
+}
+
+.project-hover-camera:hover .project-tooltip-camera {
+  visibility: visible;
+  opacity: 1;
+}
+
+.project-hover-servo {
+  position: absolute;
+  margin-top: 237px;
+  margin-left: 169px;
+  transform: rotate(42deg);
+  height: 132px;
+  cursor: pointer;
+  width: 43px;
+}
+
+.project-hover-servo .project-tooltip-servo {
+  visibility: hidden;
+  background-color: #f0f0f0;
+  color: black;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  top: -160px;
+  left: 150%;
+  width: fit-content;
+  transform: rotate(-42deg);
+  opacity: 0;
+  box-shadow: 11px 11px 50px #999999;
+  transition:opacity 0.6s;
+}
+
+.project-hover-servo:hover .project-tooltip-servo {
+  visibility: visible;
+  opacity: 1;
+}
+.project-hover-3d {
+  position: absolute;
+  margin-top: 77px;
+  margin-left: 324px;
+  transform: rotate(42deg);
+  height: 75px;
+  cursor: pointer;
+  width: 62px;
+}
+
+.project-hover-3d .project-tooltip-3d {
+  visibility: hidden;
+  background-color: #f0f0f0;
+  color: black;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  top: -180px;
+  left: 115%;
+  width: fit-content;
+  transform: rotate(-42deg);
+  opacity: 0;
+  box-shadow: 11px 11px 50px #999999;
+  transition:opacity 0.6s;
+}
+
+.project-hover-3d:hover .project-tooltip-3d {
+  visibility: visible;
+  opacity: 1;
+}
+
+.project-hover-belt {
+  position: absolute;
+  margin-top: 134px;
+  margin-left: 479px;
+  transform: rotate(42deg);
+  height: 46px;
+  cursor: pointer;
+  width: 82px;
+}
+
+.project-hover-belt .project-tooltip-belt {
+  visibility: hidden;
+  background-color: #f0f0f0;
+  color: black;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  top: -180px;
+  left: 115%;
+  width: fit-content;
+  transform: rotate(-42deg);
+  opacity: 0;
+  box-shadow: 11px 11px 50px #999999;
+  transition:opacity 0.6s;
+}
+
+.project-hover-belt:hover .project-tooltip-belt {
+  visibility: visible;
+  opacity: 1;
+}
+
+.project-tooltip-text{
+  padding-left: 10px;
+  text-align: left;
+}
+
 /* end of COLORIZMO */
 
 /* start of RACING */
