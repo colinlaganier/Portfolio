@@ -146,17 +146,34 @@
           />
         </div>
         <!-- <h2>TITLE</h2> -->
-        <img
+        <div class="project-paragraph">
+          <h2>FABRICATION</h2>
+          <p>The robotic arm was built from laser cut acrylic pieces, with 3D printed component and a metal base. Acrylic was chosen due to its ease for prototyping iterations using the laser cutter as well as its aesthetic appeal. Specific custom pieces such as a servo mount, or a timing belt tension clamp were 3D printed for rapid prototyping and iterating.</p>
+          <img
           class="project-img-mid"
           src="Images/colorizmo_mechanism.png"
           alt=""
           width="800px"
         />
-        <p>More details about this project are coming soon!</p>
+          <p>Due to the limited number of available pins on our Arduino microcontroller board, the servo controlling the vertical movement of the gripper was removed and instead a mechanical alternative was created.</p>
+        </div>
+        <div class="project-paragraph">
+          <h2>CONTROLS</h2>
+          <p>To control the robotic arm 4 potentiometers were used. These controlled the 3 servos and the stepper motor in the base. These allowed for intuitive control of the different components of the arm and enabled the user to switch from free flow control to cube detection.</p>
+        </div>
+        <div class="project-paragraph">
+          <h2>ROBOTIC CONTROL SCRIPT</h2>
+          <p>The robotic control script was made on an Arduino Uno and coded in C/C++. The Arduino and Raspberry Pi are connected through USB and communicate through UART to transmit information. The transmitted data can be directions of rotation, a cue to stop the rotation or the identified colour of a cube. </p>
+        </div>
+        <div class="project-paragraph">
+          <h2>COMPUTER VISION ALGORITHM</h2>
+          <p>To find and sort the coloured cubes, I coded a Python algorithm using OpenCV running on a Raspberry Pi. The Python script would run in the background waiting for a button to be pressed on the controller, subsequently calling an interrupt and launching the computer vision script. </p>
+          <p>By using the low depth of field of the camera to our advantage and subsequent layers of image filtering, the algorithm would identify the centroid of the cube with a very high accuracy. When the algorithm determines that the cube is aligned with the gripper, it uses the RGB value of the centroid to identify the colour of the cube and reports this to the Arduino script. This in turn triggers the pre-programmed command to grab the cube and release it in a pre-defined location with the same colour cubes. </p>
+        </div>
       </div>
       <div class="spacer"></div>
     </div>
-    <!-- The core Firebase JS SDK is a lways required and must be listed first -->
+    <!-- The core Firebase JS SDK is a gitlways required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
 
     <!-- TODO: Add SDKs for Firebase products that you want to use
