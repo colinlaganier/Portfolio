@@ -153,13 +153,18 @@
           class="project-img-mid"
           src="Images/colorizmo_mechanism.png"
           alt=""
-          width="800px"
+          width="70%"
         />
           <p>Due to the limited number of available pins on our Arduino microcontroller board, the servo controlling the vertical movement of the gripper was removed and instead a mechanical alternative was created.</p>
         </div>
         <div class="project-paragraph">
           <h2>CONTROLS</h2>
           <p>To control the robotic arm 4 potentiometers were used. These controlled the 3 servos and the stepper motor in the base. These allowed for intuitive control of the different components of the arm and enabled the user to switch from free flow control to cube detection.</p>
+          <div class="project-double-img-container">
+            <img class="project-double-img" src="Images/colorizmo_controller1.JPG" loading="lazy" alt="">
+            <img class="project-double-img" src="Images/colorizmo_controller2.JPG" loading="lazy" alt="">
+          </div>
+          <p>On the controller is the button to toggle the cube detection script on and off, as well as the LED indicating the colour of the cube when it has identified it. </p>
         </div>
         <div class="project-paragraph">
           <h2>ROBOTIC CONTROL SCRIPT</h2>
@@ -168,7 +173,39 @@
         <div class="project-paragraph">
           <h2>COMPUTER VISION ALGORITHM</h2>
           <p>To find and sort the coloured cubes, I coded a Python algorithm using OpenCV running on a Raspberry Pi. The Python script would run in the background waiting for a button to be pressed on the controller, subsequently calling an interrupt and launching the computer vision script. </p>
+          <div class="project-opencv-steps">
+            <div class="project-opencv-elem">
+              <img class="project-opencv-img" src="Images/colorizmo_resized.png">
+              <p class="project-opencv-text">Resize frame</p>
+            </div>
+            <div class="project-opencv-elem">
+              <img class="project-opencv-img" src="Images/colorizmo_gray.png">
+              <p class="project-opencv-text">Transform to grayscale</p>
+            </div>
+            <div class="project-opencv-elem">
+              <img class="project-opencv-img" src="Images/colorizmo_filteredImg.png">
+              <p class="project-opencv-text">Bilateral filtering</p>
+            </div>
+            <div class="project-opencv-elem">
+              <img class="project-opencv-img" src="Images/colorizmo_edges.png">
+              <p class="project-opencv-text">Canny edge detection</p>
+            </div>
+            <div class="project-opencv-elem">
+              <img class="project-opencv-img" src="Images/colorizmo_features.png">
+              <p class="project-opencv-text">Shi-Tomasi feature detection</p>
+            </div>
+            <div class="project-opencv-elem">
+              <img class="project-opencv-img" src="Images/colorizmo_centroid.png">
+              <p class="project-opencv-text">Centroid calculation</p>
+            </div>
+          </div>
           <p>By using the low depth of field of the camera to our advantage and subsequent layers of image filtering, the algorithm would identify the centroid of the cube with a very high accuracy. When the algorithm determines that the cube is aligned with the gripper, it uses the RGB value of the centroid to identify the colour of the cube and reports this to the Arduino script. This in turn triggers the pre-programmed command to grab the cube and release it in a pre-defined location with the same colour cubes. </p>
+          <p>This project motivated to learn more about Computer Vision and finding way of applying it to future projects. I completed an <a href="https://www.udemy.com/certificate/UC-736b28ab-379a-4d6d-8ae3-5fb5fa70d198/">online course</a> over summer to learn about OpenCV in more depth. I then worked on several projects combining Deep Learning and Computer Vision with using datasets found on Kaggle.</p>
+        </div>
+        <div class="project-link-container">
+          <div class="header-links-button" onclick="window.location='https://github.com/colin-lag/RoboColorizmo'">
+            <a class="header-link" href="https://github.com/colin-lag/RoboColorizmo">GITHUB</a>
+          </div>
         </div>
       </div>
       <div class="spacer"></div>
