@@ -70,10 +70,10 @@
         </p>
         <p>
           The task of this project was to create a robotic contraption which a
-          user could interact with. My partner and I decided to create a 3-axis
-          robotic gripping arm that could be controlled by the user. When the
+          user could <b>interact with</b>. My partner and I decided to create a <b>3-axis
+          robotic gripping arm</b> that could be controlled by the user. When the
           controls and build were finished, we decided to create and implement a
-          coloured cube sorting computer vision algorithm.
+          <b>coloured cube sorting computer vision algorithm</b>.
         </p>
       </div>
       <div class="project-paragraph">
@@ -148,31 +148,31 @@
         <!-- <h2>TITLE</h2> -->
         <div class="project-paragraph">
           <h2>FABRICATION</h2>
-          <p>The robotic arm was built from laser cut acrylic pieces, with 3D printed component and a metal base. Acrylic was chosen due to its ease for prototyping iterations using the laser cutter as well as its aesthetic appeal. Specific custom pieces such as a servo mount, or a timing belt tension clamp were 3D printed for rapid prototyping and iterating.</p>
+          <p>The robotic arm was built from laser cut <b>acrylic</b> pieces, with <b>3D printed</b> component and a metal base. Acrylic was chosen due to its ease for <b>prototyping iterations</b> using the laser cutter as well as its aesthetic appeal. Specific custom pieces such as a servo mount, or a timing belt tension clamp were 3D printed for <b>rapid prototyping and iterating</b>.</p>
           <img
           class="project-img-mid"
           src="Images/colorizmo_mechanism.png"
           alt=""
           width="70%"
         />
-          <p>Due to the limited number of available pins on our Arduino microcontroller board, the servo controlling the vertical movement of the gripper was removed and instead a mechanical alternative was created.</p>
-        </div>
+          <p>Due to the limited number of <b>available headers</b> on our Arduino microcontroller board, the servo controlling the vertical movement of the gripper could not be added. Instead, a <b>mechanical alternative</b> was created to ensure the gripper would always <b>stay parallel</b> to the ground. This was done by rotating the gripper to cancel out the rotation of the previous arm link. By connecting the ‘elbow’ and ‘wrist’ of the arm together with a <b>timing belt</b>, the mechanism successfully kept the gripper <b>levelled</b>. </p>
+      </div>
         <div class="project-paragraph">
           <h2>CONTROLS</h2>
-          <p>To control the robotic arm 4 potentiometers were used. These controlled the 3 servos and the stepper motor in the base. These allowed for intuitive control of the different components of the arm and enabled the user to switch from free flow control to cube detection.</p>
+          <p>To control the robotic arm, 4 <b>potentiometers</b> were used. These controlled the 3 servos and the stepper motor in the base. These allowed for <b>intuitive control</b> of the different components of the arm and enabled the user to switch from <b>free flow control</b> to <b>cube detection</b>.</p>
           <div class="project-double-img-container">
             <img class="project-double-img" src="Images/colorizmo_controller1.JPG" loading="lazy" alt="">
             <img class="project-double-img" src="Images/colorizmo_controller2.JPG" loading="lazy" alt="">
           </div>
-          <p>On the controller is the button to toggle the cube detection script on and off, as well as the LED indicating the colour of the cube when it has identified it. </p>
+          <p>On the controller is the <b>push button</b> to toggle the cube detection script on and off, as well as the <b>LED</b> indicating the colour of the cube when it has identified it. </p>
         </div>
         <div class="project-paragraph">
           <h2>ROBOTIC CONTROL SCRIPT</h2>
-          <p>The robotic control script was made on an Arduino Uno and coded in C/C++. The Arduino and Raspberry Pi are connected through USB and communicate through UART to transmit information. The transmitted data can be directions of rotation, a cue to stop the rotation or the identified colour of a cube. </p>
+          <p>The robotic control script was made on an <b>Arduino Uno</b> and coded in <b>C/C++</b>. This linked the potentiometers to the different servos and the stepper motor, as well as <b>established the connection</b> between the robotic script and the Raspberry Pi. The Arduino and Raspberry Pi are connected through USB and communicate through <b>UART</b> to transmit information. The transmitted data can be <b>directions of rotation</b>, a cue to <b>stop</b> the rotation or the <b>colour of a cube</b> when detected.</p>
         </div>
         <div class="project-paragraph">
           <h2>COMPUTER VISION ALGORITHM</h2>
-          <p>To find and sort the coloured cubes, I coded a Python algorithm using OpenCV running on a Raspberry Pi. The Python script would run in the background waiting for a button to be pressed on the controller, subsequently calling an interrupt and launching the computer vision script. </p>
+          <p>To find and sort the coloured cubes, I coded a Python algorithm using <b>OpenCV</b> running on a<b> Raspberry Pi</b>. The Python script would run in the background waiting for a button to be pressed on the controller, subsequently calling <b>an interrupt</b> and launching the <b>computer vision script</b>. </p>
           <div class="project-opencv-steps">
             <div class="project-opencv-elem">
               <img class="project-opencv-img" src="Images/colorizmo_resized.png">
@@ -199,8 +199,8 @@
               <p class="project-opencv-text">Centroid calculation</p>
             </div>
           </div>
-          <p>By using the low depth of field of the camera to our advantage and subsequent layers of image filtering, the algorithm would identify the centroid of the cube with a very high accuracy. When the algorithm determines that the cube is aligned with the gripper, it uses the RGB value of the centroid to identify the colour of the cube and reports this to the Arduino script. This in turn triggers the pre-programmed command to grab the cube and release it in a pre-defined location with the same colour cubes. </p>
-          <p>This project motivated to learn more about Computer Vision and finding way of applying it to future projects. I completed an <a href="https://www.udemy.com/certificate/UC-736b28ab-379a-4d6d-8ae3-5fb5fa70d198/">online course</a> over summer to learn about OpenCV in more depth. I then worked on several projects combining Deep Learning and Computer Vision with using datasets found on Kaggle.</p>
+          <p>By using the <b>low depth of field</b> of the camera to our advantage and subsequent layers of image<b> filtering</b>, the algorithm would identify the <b>centroid of the cube</b> with a very high accuracy. When the algorithm determines that the cube is <b>aligned with the gripper</b>, it uses the <b>RGB value</b> of the centroid to identify the colour of the cube and reports this to the Arduino script. This in turn triggers the<b> pre-programmed command</b> to grab the cube and release it in a pre-defined location with the <b>same colour cubes</b>. </p>
+          <p>This project motivated to learn more about Computer Vision and finding way of applying it to <b>future projects</b>. I completed an <a href="https://www.udemy.com/certificate/UC-736b28ab-379a-4d6d-8ae3-5fb5fa70d198/">online course</a> over summer to learn about OpenCV in more <b>depth</b>. I then worked on several small projects combining <b>Deep Learning and Computer Vision</b> with using datasets found on Kaggle.</p>
         </div>
         <div class="project-link-container">
           <div class="header-links-button" onclick="window.location='https://github.com/colin-lag/RoboColorizmo'">
