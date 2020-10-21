@@ -73,6 +73,10 @@ body {
   height: 100vh;
 }
 
+#miniwheg-main-img{
+  object-position: 70% 58%;
+}
+
 .header {
   height: 100vh;
 }
@@ -247,6 +251,12 @@ body {
     max-width: 90vw;
     padding:  0px;
   }
+  p{
+    font-size: 13px;
+  }
+  a{
+    font-size: 16px;
+  }
   .header{
     display: flex;
     flex-direction: column;
@@ -281,6 +291,10 @@ body {
   }
   .header-link{
     font-size: 16px;
+  }
+  #title-height{
+    line-height: 1;
+    margin-top: 7px;
   }
   .header-projects-text{
     font-size: 16px;
@@ -326,7 +340,29 @@ body {
     margin-left: 3px;
     margin-right: 3px;
   }
-
+  .project-nav-wrapper{
+    display: none;
+  }
+  .project-paragraph-split{
+    flex-direction: column;
+  }
+  .project-text-split{
+    width: 100%;
+  }
+  /* #curler-section-view-larger{
+    width: 90%;
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+    align-self: center;
+  } */
+  .project-img-split{
+    width: 90%;
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+    align-self: center;
+}
   .project-card-content{
     flex-direction: column;
   }
@@ -387,10 +423,6 @@ body {
 
 /* start of PROJECTS */
 
-#title-height{
-  margin-top: 0;
-}
-
 /* start of CYCLONE */
 
 h1{
@@ -412,7 +444,6 @@ h2{
 p{
     font-family: var(--raleway);
     font-weight: 400;
-    font-size: 16px;
     color: black;
     text-align: justify;
 }
@@ -421,7 +452,6 @@ a{
     all: unset;
     font-family: var(--raleway);
     font-weight: 700;
-    font-size: 16px;
     color: black;
     cursor: pointer;
 }
@@ -441,7 +471,6 @@ a:hover{
 }
 
 .project-nav-wrapper{
-  display: block;
   margin: 10px -10px auto auto;
   min-width: 154.41px;
 }
@@ -478,6 +507,15 @@ a:hover{
   .stripes-title-main{
     display: none;
   }
+  p{
+    font-size: 16px;
+  }
+  a{
+    font-size: 16px;
+  }
+  #title-height{
+    margin-top: 0;
+  }
   .stripe-red {
     width: 12px;
     margin-left: 4px;
@@ -500,19 +538,37 @@ a:hover{
   .project-hover-container{
     width: 75%;
   }
-  
-.project-hover-stepper {
-  position: absolute;
-  margin-top: 306px;
-  margin-left: 73px;
-  height: 83px;
-  cursor: pointer;
-  width: 91px;
+  .project-nav-wrapper{ 
+    display: block;
+  }
+  .project-text-split{
+    width: 50%;
+  }
+  .project-hover-stepper {
+    position: absolute;
+    margin-top: 306px;
+    margin-left: 73px;
+    height: 83px;
+    cursor: pointer;
+    width: 91px;
+  }
+  #colorizmo-main-img {
+    object-position: 0% 45%;
+  }
+ 
+#curler-section-view-larger{
+  width: 42%;
+  margin-top: -50px;
 }
-#colorizmo-main-img {
-  object-position: 0% 45%;
+.project-img-split{
+  margin-left: auto;
+  margin-right: 0px;
+  align-self: center;
 }
-
+#curler-section-view{
+  width: 35%;
+  margin-top: -37px;
+}
 .project-hover-stepper .project-tooltip-stepper {
   visibility: hidden;
   background-color: #f0f0f0;
@@ -741,22 +797,6 @@ a:hover{
     display: flex;
 }
 
-.project-text-split{
-    width: 50%;
-}
-
-.project-img-split{
-    margin-left: auto;
-    margin-right: 0px;
-    align-self: center;
-
-}
-
-#curler-section-view{
-    width: 35%;
-    margin-top: -37px;
-}
-
 .project-img-mid{
     margin-left: auto;
     margin-right: auto;
@@ -764,7 +804,7 @@ a:hover{
 }
 
 #curler-main-img{
-    object-position: 0% 17%
+    object-position: 34% 17%
 }
 
 .project-triple-split{

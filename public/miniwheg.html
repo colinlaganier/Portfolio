@@ -24,7 +24,7 @@
           <div class="stripe-teal"></div>
           <div class="stripe-grey"></div>
         </div>
-        <h1 id="title-height">ROBO COLORIZMO</h1>
+        <h1 id="title-height">MINI-WHEG</h1>
         <div class="project-nav-wrapper">
           <img
             class="project-nav-left"
@@ -36,7 +36,7 @@
             class="project-nav-menu"
             src="./Images/menu_icon.svg"
             alt="menu-icon"
-            onclick="window.location='index.html'"
+            onclick="window.location='index.html'" 
           />
           <img
             class="project-nav-right"
@@ -50,13 +50,37 @@
         <div class="project-overview-wrapper">
             <h2>OVERVIEW</h2>
             <p>March - April 2020</p>
-            <p>The task of this project was to design a fully functional model of a robotic device using Solidworks that would satisfy a range of requirements. It is inspired by the pre-existing Mini-Whegs created by the team at Case Western Reserve University.</p>
+            <p>The task of this project was to design a fully functional model of a robotic device using <b>Solidworks</b> that would satisfy a range of requirements. It is inspired by the pre-existing <b>MiniWhegs</b> created by the team at <b>Case Western Reserve University</b>.</p>
         </div>
         <div class="project-paragraph">
+          <h2>PRODUCT DETAIL</h2>
+          <div class="project-paragraph-split" >
+            <p class="project-text-split">My MiniWheg is a <b>four "wheel" drive</b> mini vehicle, and has a total of <b>168</b> different components. The main elements of the MiniWheg are the <b>gearbox</b>, centre, front and rear <b>differential</b>, <b>DC motor</b>, micro-servo powered <b>rack and pinion steering system</b>, <b>battery pack</b>, electronic <b>controller</b>, and the four <b>whegs</b>. The robot's dimensions were restricted to 160x80x80mm, its weight limited to 200g, with a turning circle of less than 160mm, a speed of at least 0.5m/s, and could carry a payload of 200g. With all of these specifications in mind, I designed my MiniWheg with<b> speed and efficiency</b> in mind, to create a <b>smooth </b>driving contraption even on rough terrains.</p>
+            <img class="project-img-split" id="curler-section-view-larger" src="Images/miniwheg_top_view.png" alt="">
+          </div>
+          <div class="project-paragraph-split" >
+            <p class="project-text-split">To obtain the necessary <b>torque </b>to climb obstacles up to<b> 55mm tall</b>, a<b> 54:1 gearbox </b>is used was designed, with the goal of occupying as little space as possible. The gearbox relies on <b>3 sets of spur gears</b>, increasing the torque with each subsequent <b>gear reduction</b>, and then transfers the rotation to a timing belt to the center differential. Through calculations it was determined that <b>0.104Nm </b>of torque was required, ultimately allowing my MiniWheg to travel at a speed of <b>0.75m/s</b> on rough terrain.</p>
+            <img class="project-img-split" id="curler-section-view" src="Images/miniwheg_gear_reduction.png" alt="">
+          </div>
+          <div class="project-paragraph-split" >
+            <p class="project-text-split">The MiniWheg was designed to be <b>4-Wheel drive</b>, therefore needing the power from the motor to be transferred to all of the wheels. A <b>differential system</b> was created to allow for<b> better steering </b>and more<b> efficient power delivery</b>. The centre differential outputs the torque to both the front and rear <b>drive shafts</b>, adjusting the <b>speed </b>between the two axles and automatically outputting more speed to the slower side. The front and rear differentials enable the left and right sides to be at different speeds when turning as the internal wheel needs to spin less than the external one.</p>
+            <img class="project-img-split" id="curler-section-view" src="Images/miniwheg_differential.png" alt="">
+          </div>
+          <div class="project-paragraph-split" >
+            <p class="project-text-split">The steering mechanism relies on a <b>servo powered rack and pinion system</b>, chosen because of its relatively <b>small size</b> and simple mechanism. To minimise the <b>turning radius</b> of the MiniWheg, the<b> Ackermann steering geometry </b>was used, ensuring the external wheel would have a smaller turning angle. Through calculations, it was determined that allowing the wheels to have turning angle of &alpha;<sub>i</sub>=37.35° and &alpha;<sub>o</sub>=25.21° would be enough to ensure a turning circle<b> smaller than 160mm</b>.</p>
+            <img class="project-img-split" id="curler-section-view" src="Images/miniwheg_steering3.png" alt="">
+          </div>
+        </div> 
+        <div class="project-paragraph">
+          <h2>DESIGN FOR MANUFACTURING</h2>
+          <p>As <b>feasible and efficient</b> manufacturing was required for this project, most of the components were designed to be <b>injection moulded</b> for ease of large scale productions. To ensure this was feasible, multiple <b>design iterations</b> of the different components was required and <b>Injection Moulding Simulations</b> were done using Solidworks. This dictated some design elements, such as the integration of the different <b>supports to the main chassis </b>to reduce the number of individual components, as well as the addition of<b> draft angles and fillets </b>to the different bodies.</p>
           <img class="project-img-mid" src="Images/miniwheg_injection.gif" width="60%" alt="miniwheg-injection">
-          <!-- <h2>TITLE</h2> -->
-          <p>More details about this project are coming soon!</p>
         </div>
+        <!-- <div class="project-paragraph">
+          <h2>FEA VERIFICATION</h2> -->
+          <!-- <p></p> -->
+          <!-- <img class="project-img-mid" src="Images/miniwheg_injection.gif" width="60%" alt="miniwheg-injection"> -->
+        <!-- </div> -->
         <!-- <img src="Images/colorizmo_mechanism.png" alt="" width="500px"> -->
         <div class="spacer"></div>    
       </div>
