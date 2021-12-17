@@ -14,12 +14,17 @@
     <style type="text/css">
         body, html
         {
-            margin: 0; padding: 0; height: 100%; overflow: hidden;
+            margin: 0; padding: 0; height: 100%; overflow: hidden; background-color: #eeeeee;
         }
     
         #iot_content
         {
-            position:absolute; left: 0; right: 0; bottom: 0; top: 0px; 
+            position:absolute; left: 0; right: 0; bottom: 0; top: 0px; justify-content: center;display: flex;
+        }
+
+        #iot_frame
+        {
+            justify-content: center; margin:auto; box-shadow: 11px 11px 50px #999999; border-radius: 10px;
         }
     </style>
     </head>
@@ -37,7 +42,7 @@
     <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-analytics.js"></script>
 
     <div id="iot_content">
-        <iframe width="100%" height="100%" src="https://datastudio.google.com/embed/reporting/d2041745-fc8f-46f9-a472-f93ce942ce72/page/VgD" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe id="iot_frame" width="70%" height="70%" src="https://datastudio.google.com/embed/reporting/d2041745-fc8f-46f9-a472-f93ce942ce72/page/VgD" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
 
     <script>
